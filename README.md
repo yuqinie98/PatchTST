@@ -79,6 +79,8 @@ https://github.com/alipay/Pyraformer
 
 https://github.com/ts-kim/RevIN
 
+https://github.com/timeseriesAI/tsai
+
 ## Citation
 
 If you find this repo useful in your research, please consider citing our paper as follows:
