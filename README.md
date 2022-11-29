@@ -2,17 +2,38 @@
 
 This is an offical implementation of PatchTST: "A Time Series is Worth 64 Words: Long-term Forecasting with Transformers." https://arxiv.org/abs/2211.14730.
 
-## Key Designs of PatchTST Model
+## Key Designs
 
-1. Patching: segmentation of time series into subseries-level patches which are served as input tokens to Transformer 
+1. Patching: segmentation of time series into subseries-level patches which are served as input tokens to Transformer.
 
 2. Channel-independence: each channel contains a single univariate time series that shares the same embedding and Transformer weights across all the series.
 
-## 
+![alt text](https://github.com/yuqinie98/PatchTST/blob/main/pic/model.png)
+
+## Results
+
+### Supervised Learning
+
+Compared with the best results that Transformer-based models can offer, PatchTST/64 achieves an overall **21.0%** reduction on MSE and **16.7%** reduction
+on MAE, while PatchTST/42 attains a overall **20.2%** reduction on MSE and **16.4%** reduction on MAE. It also outperforms other non-Transformer-based models like DLinear.
+
+![alt text](https://github.com/yuqinie98/PatchTST/blob/main/pic/table3.png)
+
+### Self-supervised Learning
+
+We do comparison with other supervised and self-supervised models, and self-supervised PatchTST is able to outperform all the baselines. 
+
+![alt text](https://github.com/yuqinie98/PatchTST/blob/main/pic/table4.png)
+
+![alt text](https://github.com/yuqinie98/PatchTST/blob/main/pic/table6.png)
+
+We also test the capability of transfering the pre-trained model to downstream tasks.
+
+![alt text](https://github.com/yuqinie98/PatchTST/blob/main/pic/table5.png)
 
 ## Getting Started
 
-We seperate our codes for supervised learning and self-supervised learning into 2 folders. Please choose the one that you want to work with.
+We seperate our codes for supervised learning and self-supervised learning into 2 folders: ```PatchTST_supervised``` and ```PatchTST_self_supervised```. Please choose the one that you want to work with.
 
 ### Supervised Learning
 
@@ -24,6 +45,8 @@ We seperate our codes for supervised learning and self-supervised learning into 
 ```
 sh ./scripts/PatchTST/weather.sh
 ```
+
+You can adjust the hyperparameters based on your needs. (e.g. different patch length, different look-back windows and prediction lengths.)
 
 ### Self-supervised Learning
 
