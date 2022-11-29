@@ -46,7 +46,7 @@ We seperate our codes for supervised learning and self-supervised learning into 
 sh ./scripts/PatchTST/weather.sh
 ```
 
-You can adjust the hyperparameters based on your needs. (e.g. different patch length, different look-back windows and prediction lengths.)
+You can adjust the hyperparameters based on your needs (e.g. different patch length, different look-back windows and prediction lengths.). We also provide codes for the baseline models.
 
 ### Self-supervised Learning
 
