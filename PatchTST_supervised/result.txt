@@ -1,0 +1,9 @@
+336_96_PatchTST_ETTh1_ftM_sl336_ll48_pl96_dm16_nh4_el3_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.37506985664367676, mae:0.39943891763687134, rse:0.5807263255119324
+
+336_192_PatchTST_ETTh1_ftM_sl336_ll48_pl192_dm16_nh4_el3_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.4136623442173004, mae:0.4210638403892517, rse:0.6107657551765442
+
+exchange_96_96_Autoformer_custom_ftM_sl96_ll48_pl96_dm512_nh8_el2_dl1_df2048_fc3_ebtimeF_dtTrue_Exp_0  
+mse:0.20006166398525238, mae:0.3301156163215637, rse:0.3406660854816437
+
