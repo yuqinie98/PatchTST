@@ -4,9 +4,9 @@ This is an offical implementation of PatchTST: "A Time Series is Worth 64 Words:
 
 ## Key Designs
 
-1. Patching: segmentation of time series into subseries-level patches which are served as input tokens to Transformer.
+1. **Patching**: segmentation of time series into subseries-level patches which are served as input tokens to Transformer.
 
-2. Channel-independence: each channel contains a single univariate time series that shares the same embedding and Transformer weights across all the series.
+2. **Channel-independence**: each channel contains a single univariate time series that shares the same embedding and Transformer weights across all the series.
 
 ![alt text](https://github.com/yuqinie98/PatchTST/blob/main/pic/model.png)
 
