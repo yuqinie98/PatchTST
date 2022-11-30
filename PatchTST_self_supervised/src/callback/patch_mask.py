@@ -2,7 +2,7 @@
 import torch
 from torch import nn
 
-from tsfm.src.callback.core import Callback
+from .core import Callback
 
 # Cell
 class PatchCB(Callback):
