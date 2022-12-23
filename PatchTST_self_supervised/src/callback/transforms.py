@@ -2,7 +2,7 @@
 import torch
 import torch.nn as nn
 from .core import Callback
-from tsfm.src.models.layers.revin import RevIN
+from src.models.layers.revin import RevIN
 
 class RevInCB(Callback):
     def __init__(self, num_features: int, eps=1e-5, 
