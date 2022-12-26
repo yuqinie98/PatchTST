@@ -99,7 +99,7 @@ class Patch(nn.Module):
         x: [bs x seq_len x n_vars]
         """
         x = x[:, self.s_begin:, :]
-        x = x.unfold(dimension=1, size=patch_len, step=stride)                 # xb: [bs x num_patch x n_vars x patch_len]
+        x = x.unfold(dimension=1, size=self.patch_len, step=self.stride)                 # xb: [bs x num_patch x n_vars x patch_len]
         return x
 
 
