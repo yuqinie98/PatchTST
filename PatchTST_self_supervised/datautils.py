@@ -15,7 +15,7 @@ DSETS = ['ettm1', 'ettm2', 'etth1', 'etth2', 'electricity',
 
 def get_dls(params):
     
-    assert params.dset in DSETS, f"Unrecognized dset (`{dset}`). Options include: {_DSETS}"
+    assert params.dset in DSETS, f"Unrecognized dset (`{params.dset}`). Options include: {DSETS}"
     if not hasattr(params,'use_time_features'): params.use_time_features = False
 
     if params.dset == 'ettm1':
