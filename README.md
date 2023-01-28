@@ -1,4 +1,4 @@
-# PatchTST
+# PatchTST (ICLR 2023)
 
 This is an offical implementation of PatchTST: "A Time Series is Worth 64 Words: Long-term Forecasting with Transformers." https://arxiv.org/abs/2211.14730.
 
@@ -80,6 +80,10 @@ https://github.com/alipay/Pyraformer
 https://github.com/ts-kim/RevIN
 
 https://github.com/timeseriesAI/tsai
+
+## Contact
+
+If you have any questions, please contact us: ynie@princeton.edu or nnguyen@us.ibm.com
 
 ## Citation
 
