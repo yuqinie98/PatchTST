@@ -1,12 +1,18 @@
 # PatchTST (ICLR 2023)
 
-This is an offical implementation of PatchTST: "A Time Series is Worth 64 Words: Long-term Forecasting with Transformers." https://arxiv.org/abs/2211.14730.
+### This is an offical implementation of PatchTST: [A Time Series is Worth 64 Words: Long-term Forecasting with Transformers](https://arxiv.org/abs/2211.14730).
+
+:triangular_flag_on_post: Our model has been included in [timeseriesAI(tsai)](https://github.com/timeseriesAI/tsai/blob/main/tutorial_nbs/15_PatchTST_a_new_transformer_for_LTSF.ipynb). Special thanks to the contributor @[oguiza](https://github.com/oguiza)!
+
+:triangular_flag_on_post: We offer a video that provides a concise overview of our paper for individuals seeking a rapid comprehension of its contents:
+
+https://user-images.githubusercontent.com/75209437/222992293-9fade46d-420e-469f-b406-9c9a86282fe6.mov
 
 ## Key Designs
 
-1. **Patching**: segmentation of time series into subseries-level patches which are served as input tokens to Transformer.
+:star2: **Patching**: segmentation of time series into subseries-level patches which are served as input tokens to Transformer.
 
-2. **Channel-independence**: each channel contains a single univariate time series that shares the same embedding and Transformer weights across all the series.
+:star2: **Channel-independence**: each channel contains a single univariate time series that shares the same embedding and Transformer weights across all the series.
 
 ![alt text](https://github.com/yuqinie98/PatchTST/blob/main/pic/model.png)
 
@@ -30,6 +36,12 @@ We do comparison with other supervised and self-supervised models, and self-supe
 We also test the capability of transfering the pre-trained model to downstream tasks.
 
 ![alt text](https://github.com/yuqinie98/PatchTST/blob/main/pic/table5.png)
+
+## Efficiency on Long Look-back Windows
+
+Our PatchTST consistently <ins>reduces the MSE scores as the look-back window increases</ins>, which confirms our model’s capability to learn from longer receptive field. In contrast, these Transformer-based baselines do not benefit from longer look-back window L, indicating their ineffectiveness in capturing temporal information.
+
+![alt text](https://github.com/yuqinie98/PatchTST/blob/main/pic/varying_L.png)
 
 ## Getting Started
 
@@ -83,21 +95,21 @@ https://github.com/timeseriesAI/tsai
 
 ## Contact
 
-If you have any questions, please contact us: ynie@princeton.edu or nnguyen@us.ibm.com
+If you have any questions or concerns, please contact us: ynie@princeton.edu or nnguyen@us.ibm.com or submit an issue
 
 ## Citation
 
 If you find this repo useful in your research, please consider citing our paper as follows:
 
 ```
-@article{Yuqietal-2022-PatchTST,
-  title={A Time Series is Worth 64 Words: Long-term Forecasting with Transformers},
-  author={Yuqi Nie and 
-          Nam H. Nguyen and 
-          Phanwadee Sinthong and 
-          Jayant Kalagnanam},
-  journal={arXiv preprint arXiv:2211.14730},
-  year={2022}
+@inproceedings{Yuqietal-2023-PatchTST,
+  title     = {A Time Series is Worth 64 Words: Long-term Forecasting with Transformers},
+  author    = {Nie, Yuqi and
+               H. Nguyen, Nam and
+               Sinthong, Phanwadee and 
+               Kalagnanam, Jayant},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2023}
 }
 ```
 
