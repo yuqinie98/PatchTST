@@ -6,7 +6,11 @@
 
 :triangular_flag_on_post: We offer a video that provides a concise overview of our paper for individuals seeking a rapid comprehension of its contents:
 
-https://user-images.githubusercontent.com/75209437/222992293-9fade46d-420e-469f-b406-9c9a86282fe6.mov
+
+
+https://user-images.githubusercontent.com/75209437/223286002-54e5424c-a19a-4e00-89e5-9e6f4a5e5c00.mp4
+
+
 
 ## Key Designs
 
