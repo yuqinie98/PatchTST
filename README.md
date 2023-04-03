@@ -2,13 +2,11 @@
 
 ### This is an offical implementation of PatchTST: [A Time Series is Worth 64 Words: Long-term Forecasting with Transformers](https://arxiv.org/abs/2211.14730).
 
+:triangular_flag_on_post: Our model has been included in [NeuralForecast](https://github.com/Nixtla/neuralforecast). Special thanks to the contributor @[kdgutier](https://github.com/kdgutier) and @[cchallu](https://github.com/cchallu)!
+
 :triangular_flag_on_post: Our model has been included in [timeseriesAI(tsai)](https://github.com/timeseriesAI/tsai/blob/main/tutorial_nbs/15_PatchTST_a_new_transformer_for_LTSF.ipynb). Special thanks to the contributor @[oguiza](https://github.com/oguiza)!
 
-:triangular_flag_on_post: We offer a video that provides a concise overview of our paper for individuals seeking a rapid comprehension of its contents:
-
-
-
-https://user-images.githubusercontent.com/75209437/223286002-54e5424c-a19a-4e00-89e5-9e6f4a5e5c00.mp4
+:triangular_flag_on_post: We offer a video that provides a concise overview of our paper for individuals seeking a rapid comprehension of its contents: https://www.youtube.com/watch?v=Z3-NrohddJw
 
 
 
