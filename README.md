@@ -41,7 +41,7 @@ We also test the capability of transfering the pre-trained model to downstream t
 
 ## Efficiency on Long Look-back Windows
 
-Our PatchTST consistently <ins>reduces the MSE scores as the look-back window increases</ins>, which confirms our model’s capability to learn from longer receptive field. In contrast, these Transformer-based baselines do not benefit from longer look-back window L, indicating their ineffectiveness in capturing temporal information.
+Our PatchTST consistently <ins>reduces the MSE scores as the look-back window increases</ins>, which confirms our model’s capability to learn from longer receptive field.
 
 ![alt text](https://github.com/yuqinie98/PatchTST/blob/main/pic/varying_L.png)
 
