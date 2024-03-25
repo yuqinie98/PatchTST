@@ -65,7 +65,7 @@ def get_model(c_in, args):
     c_in: number of variables
     """
     # get number of patches
-    num_patch = (max(args.context_points, args.patch_len)-args.patch_len) // args.stride + 1    
+    num_patch = (max(args.context_points, args.patch_len)-args.patch_len) // args.stride + 2
     print('number of patches:', num_patch)
     
     # get model
